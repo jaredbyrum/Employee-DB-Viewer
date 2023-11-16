@@ -22,7 +22,8 @@ GitHub: https://github.com/jaredbyrum/Employee-DB-Viewer
 
 No Live Application.
 
-Video Demo: 
+Video Demo: https://drive.google.com/file/d/14qfNh3r0FovJR5Ehr0ctVgUEkU_9qLGk/view?usp=sharing
+
 
 
 
