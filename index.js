@@ -110,6 +110,8 @@ function viewDepartments () {
 
 //add functions
 //add department
+
+// goal add ability to view a list of options when making new roles and employees
 function addDepartment() {
   inquirer
   .prompt([
@@ -189,7 +191,7 @@ function addEmployee() {
       },
       {
         name: "employeeManager",
-        message: "Who is their manager? (employee_id)",
+        message: "Who is their manager? (employee_id or ENTER for NULL)",
         type: "input",
       }
   ]
@@ -201,7 +203,8 @@ function addEmployee() {
           first_name: answer.employeeFirst,
           last_name: answer.employeeLast,
           role_id: answer.employeeRole,
-          manager_id: answer.employeeManager,
+          // if answer.employee manager is an empty string sets answer to null
+          manager_id: answer.employeeManager === "" ? null : answer.employeeManager,
         },
         (err, res) => {
           if (err) {
